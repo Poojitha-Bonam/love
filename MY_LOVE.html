@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOVE</title>
+    <style>
+        body {
+            height: 100vh;
+            color: white;
+            background-color: black;
+        }
+        .love {
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .love p{
+            font-size: 8rem;
+        }
+        .love span {
+            display: inline-block;
+            animation: rotateY 3s linear infinite;
+            color: red;
+        }
+        img {
+            height:400px; 
+        }
+        .love+p {
+            color:red;
+            font-weight: bold;
+            font-style: italic;
+            font-size:4rem ;
+        }
+        @keyframes rotateY {
+            0% {
+                transform: rotateY(0deg);
+            }
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+        @media screen and (max-width:500px) {
+            .love p{
+            font-size: 3rem;
+            }
+            img {
+                width:200px;
+                height:300px;
+            }
+            .love+p {font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="love">
+        <p>I <span>❤</span> YOU KANNA </p>
+    </div>
+    <p>Happy Valentines Day ra...❤</p>
+    <img src="./pic.jpg" alt="">
+    
+</body>
+</html>
